@@ -5,6 +5,10 @@
 
 **Jaravis Agent** is an AI-powered system designed to revolutionize **Detection Engineering** by automating the generation of high-quality detection rules across multiple cybersecurity platforms.
 
+## Multi Agent - LangGraph Agent 
+
+<img width="817" height="666" alt="Screenshot 2025-07-13 at 11 21 12 PM" src="https://github.com/yourusername/yourrepository/blob/main/assets/screenshot.png?raw=true" />
+
 - **Ingestion**: Pulls and normalizes threat intelligence reports directly from **AlienVault OTX**.
 - **Mapping**: Correlates ingested threat intelligence with **MITRE ATT&CK** techniques, tactics, and procedures (TTPs).
 - **Rule Generation**: Automatically generates detection rules tailored for diverse cyber defense platforms (e.g., SIEMs, EDRs, IDS/IPS).

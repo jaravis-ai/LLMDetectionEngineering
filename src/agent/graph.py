@@ -179,11 +179,31 @@ class MappingAgent:
         print("MappingAgent: mapping extracted data...")
         # Example: state.mapped = map_entities(state.entities)
         return state
+    
+class MappingReflection:
+    def run(self, state: AgentState, config: RunnableConfig):
+        # TODO: Add mapping logic here
+        print("MappingReflection: mapping extracted data with reflection...")
+        return state 
+
+class RuleGenerationAgent:
+    def run(self, state: AgentState, config: RunnableConfig):
+        # TODO: Add rule generation logic here
+        print("RuleGenerationAgent: generating detection rules...")
+        return state
+
+def should_continue(state):
+    if True:  # Replace with actual condition
+        return "rule_generation"
+    return "mapping_reflection"
+
 
 # Example: Add agents as nodes in the graph
 ingestion_agent = IngestionAgent()
 extraction_agent = ExtractionAgent()
 mapping_agent = MappingAgent()
+mapping_reflection = MappingReflection()
+rule_generation_agent = RuleGenerationAgent()
 
 
 # Create the state graph
@@ -195,14 +215,23 @@ graph = StateGraph(state_schema=AgentState,config_schema=Configuration,
 
 
 graph.add_node("ingestion", ingestion_agent.run)
-#graph.add_node("extraction", extraction_agent.run)
-#graph.add_node("mapping", mapping_agent.run)
+graph.add_node("extraction", extraction_agent.run)
+graph.add_node("mapping", mapping_agent.run)
+graph.add_node("mapping_reflection", mapping_reflection.run)  # Example of another node
+graph.add_node("rule_generation", rule_generation_agent.run)
 
 # Example: Set up the flow between agents
 graph.set_entry_point("ingestion")
-graph.add_edge("ingestion",END)
-#graph.add_edge("ingestion", "extraction")
-#graph.add_edge("extraction", "mapping")
+#graph.add_edge("ingestion",END)
+graph.add_edge("ingestion", "extraction")
+graph.add_edge("extraction", "mapping")
+graph.add_conditional_edges(
+    "mapping", 
+    should_continue, 
+    {"rule_generation": "rule_generation", "mapping_reflection": "mapping_reflection"}
+)
+graph.add_edge("mapping_reflection", "mapping")  # Example edge to another node
+graph.add_edge("rule_generation", END)
 #graph.add_edge("mapping", END)
 
 
