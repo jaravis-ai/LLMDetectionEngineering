@@ -24,17 +24,20 @@ Follow the steps below to set up **Jarvis Agent** locally:
    cd LLMDetectionEngineering
 
 2. **Install Poetry (if not already installed)**
-pip install poetry
+   ```bash
+   pip install poetry
 
 3. **Install Dependencies from pyproject.toml**
-poetry install
+   ```bash
+   poetry install
 
 This will:
 - Create a virtual environment
 - Install all dependencies specified in `pyproject.toml`
 
 4. **Set Up Environment Variables**
-cp .env.example .env
+   ```bash
+   cp .env.example .env
 
 
 
