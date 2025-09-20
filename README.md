@@ -39,6 +39,19 @@ This will:
    ```bash
    cp .env.example .env
 
+## 🚀 Running the Project
+
+After completing the setup, you can run **Jarvis Agent** using Poetry and LangGraph:
+
+1. **Run the Agent**
+   ```bash
+   poetry run langgraph dev
+
+This command will start the LangGraph API server in development mode 
+and launch the project in **LangGraph Studio**, 
+where you can interact with the agents visually.
+
+
 
 
 
