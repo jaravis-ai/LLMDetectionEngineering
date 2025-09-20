@@ -7,7 +7,7 @@
 
 ## Multi Agent - LangGraph Agent 
 
-<img width="817" height="666" alt="Screenshot 2025-07-13 at 11 21 12 PM" src="https://github.com/yourusername/yourrepository/blob/main/assets/screenshot.png?raw=true" />
+<img width="817" height="666" alt="LLM in Detection Engineering" src="https://github.com/jaravis-ai/LLMDetectionEngineering/blob/main/assets/LLM_In_Detection_Engineering.png" />
 
 - **Ingestion**: Pulls and normalizes threat intelligence reports directly from **AlienVault OTX**.
 - **Mapping**: Correlates ingested threat intelligence with **MITRE ATT&CK** techniques, tactics, and procedures (TTPs).
