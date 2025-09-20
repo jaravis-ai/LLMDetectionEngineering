@@ -86,17 +86,18 @@ Example:
   ]
 }
 
-### 🔄 Step 4. Rule Generation
-Use **mapped techniques + IOCs** to auto-generate detection rules.
+### Step 4. Rule Generation
+- Use **mapped techniques + IOCs** to auto-generate detection rules.
 
-**Supported Rule Formats:**
-- 📝 **Sigma** (SIEM-agnostic)  
-- 🛡️ **YARA / Suricata / Snort** (network-focused)  
-- 💻 **EDR rules** (endpoint telemetry)  
+
+## **Supported Rule Formats:**
+- **Sigma** (SIEM-agnostic)  
+- **YARA / Suricata / Snort** (network-focused)  
+- **EDR rules** (endpoint telemetry)  
 
 ---
 
-### 🧪 Step 5. Validation & Testing
+### Step 5. Validation & Testing
 - Test generated rules in:
   - **Sandbox environments**  
   - **SIEM platforms**  
@@ -107,10 +108,10 @@ Use **mapped techniques + IOCs** to auto-generate detection rules.
 
 ---
 
-### 📊 Step 6. Monitoring & Coverage Tracking
+### Step 6. Monitoring & Coverage Tracking
 Maintain a **dashboard of MITRE ATT&CK coverage** to ensure visibility and completeness.
 
-**Track the following:**
+## **Track the following:**
 - ✅ Techniques **observed** in OTX pulses  
 - 🛡️ Techniques **covered** by generated rules  
 - ⚠️ **Coverage gaps** (techniques not yet addressed)  
