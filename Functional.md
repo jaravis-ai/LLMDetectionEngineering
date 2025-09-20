@@ -85,6 +85,7 @@ Example:
     { "id": "T1021.002", "name": "SMB/Windows Admin Shares" }
   ]
 }
+```
 
 ### Step 4. Rule Generation
 - Use **mapped techniques + IOCs** to auto-generate detection rules.
