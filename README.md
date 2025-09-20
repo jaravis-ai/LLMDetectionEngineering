@@ -1,9 +1,9 @@
 # 🔬 LLM in Detection Engineering 
-# LLM in Detection Engineering – Jarvis Agent
+# LLM in Detection Engineering – Jaravis Agent
 
 ## 🔎 Short Working Brief
 
-**Jarvis Agent** is an AI-powered system designed to revolutionize **Detection Engineering** by automating the generation of high-quality detection rules across multiple cybersecurity platforms.
+**Jaravis Agent** is an AI-powered system designed to revolutionize **Detection Engineering** by automating the generation of high-quality detection rules across multiple cybersecurity platforms.
 
 - **Ingestion**: Pulls and normalizes threat intelligence reports directly from **AlienVault OTX**.
 - **Mapping**: Correlates ingested threat intelligence with **MITRE ATT&CK** techniques, tactics, and procedures (TTPs).
@@ -16,7 +16,7 @@ The goal is to **reduce manual detection engineering efforts by 80%**, enabling 
 
 ## ⚙️ Setup Instructions
 
-Follow the steps below to set up **Jarvis Agent** locally:
+Follow the steps below to set up **Jaravis Agent** locally:
 
 1. **Clone the Repository**
    ```bash
@@ -41,7 +41,7 @@ This will:
 
 ## 🚀 Running the Project
 
-After completing the setup, you can run **Jarvis Agent** using Poetry and LangGraph:
+After completing the setup, you can run **Jaravis Agent** using Poetry and LangGraph:
 
 1. **Run the Agent**
    ```bash
