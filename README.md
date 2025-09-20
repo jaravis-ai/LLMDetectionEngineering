@@ -12,3 +12,31 @@
 
 The goal is to **reduce manual detection engineering efforts by 80%**, enabling faster, more accurate, and consistent threat detection across enterprise security ecosystems.
 
+---
+
+## ⚙️ Setup Instructions
+
+Follow the steps below to set up **Jarvis Agent** locally:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/jaravis-ai/LLMDetectionEngineering.git
+   cd LLMDetectionEngineering
+
+2. **Install Poetry (if not already installed)**
+pip install poetry
+
+3. **Install Dependencies from pyproject.toml**
+poetry install
+
+This will:
+- Create a virtual environment
+- Install all dependencies specified in `pyproject.toml`
+
+4. **Set Up Environment Variables**
+cp .env.example .env
+
+
+
+
+
